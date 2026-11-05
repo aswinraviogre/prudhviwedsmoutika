@@ -1,0 +1,87 @@
+@import "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Great+Vibes&family=Cinzel:wght@400;500;600&display=swap";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 38 40% 96%;
+    --foreground: 25 30% 18%;
+    --card: 38 40% 96%;
+    --card-foreground: 25 30% 18%;
+    --popover: 38 40% 96%;
+    --popover-foreground: 25 30% 18%;
+    --primary: 348 60% 42%;
+    --primary-foreground: 38 40% 96%;
+    --secondary: 95 18% 70%;
+    --secondary-foreground: 25 30% 18%;
+    --muted: 38 30% 90%;
+    --muted-foreground: 25 15% 40%;
+    --accent: 36 45% 60%;
+    --accent-foreground: 25 30% 18%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 38 40% 96%;
+    --border: 36 30% 80%;
+    --input: 36 30% 80%;
+    --ring: 348 60% 42%;
+    --radius: 0.75rem;
+
+    --sage: 95 22% 65%;
+    --sage-deep: 95 25% 45%;
+    --sage-soft: 95 30% 88%;
+    --cream: 38 50% 95%;
+    --gold: 36 55% 55%;
+    --gold-soft: 36 60% 75%;
+    --rose: 348 60% 50%;
+    --rose-deep: 348 65% 35%;
+    --ink: 25 30% 18%;
+
+    --gradient-sage: linear-gradient(135deg, hsl(95 30% 78%), hsl(95 22% 62%));
+    --gradient-cream: linear-gradient(180deg, hsl(38 50% 96%), hsl(38 40% 92%));
+    --gradient-gold: linear-gradient(135deg, hsl(36 55% 60%), hsl(36 45% 45%));
+    --gradient-rose: linear-gradient(135deg, hsl(348 55% 55%), hsl(348 65% 38%));
+
+    --shadow-elegant: 0 20px 60px -20px hsl(95 25% 25% / 0.25);
+    --shadow-soft: 0 8px 30px -10px hsl(25 30% 18% / 0.15);
+    --shadow-gold: 0 10px 40px -10px hsl(36 55% 45% / 0.4);
+    --transition-elegant: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  body {
+    @apply bg-background text-foreground font-serif-display;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    overflow-x: hidden;
+  }
+}
+
+.font-script {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-serif-display {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.15em;
+}
+
+.gradient-gold {
+  background: var(--gradient-gold);
+}
+
+.shadow-gold {
+  box-shadow: var(--shadow-gold);
+}
+
+.shadow-elegant {
+  box-shadow: var(--shadow-elegant);
+}
+
+.shadow-soft {
+  box-shadow: var(--shadow-soft);
+}
+

@@ -144,11 +144,11 @@ export default function MeetTheCouple() {
           </div>
           <div className="bg-[#fafafa] border border-gold-soft p-4 sm:p-5 pb-8 sm:pb-10 rounded-sm shadow-elegant max-w-sm w-full -rotate-1 hover:rotate-0 hover:scale-[1.02] transition-all duration-500 relative group border-b-[8px] border-b-gold-soft/30">
             <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/10 pointer-events-none" />
-            <div className="aspect-[3/4] overflow-hidden bg-zinc-100 rounded-sm border border-zinc-200 shadow-inner mb-4 sm:mb-5">
+            <div className="aspect-[9/16] overflow-hidden bg-zinc-100 rounded-sm border border-zinc-200 shadow-inner mb-4 sm:mb-5">
               <img
                 src={firstPhoto.image}
                 alt="Our first photo together"
-                className="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-500"
+                className="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-500"
                 loading="lazy"
               />
             </div>

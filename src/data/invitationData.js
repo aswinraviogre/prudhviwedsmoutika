@@ -15,17 +15,9 @@ export const invitationData = {
       mother: "Mrs. Sujatha",
       parentsTitle: "D/o Mrs. Sujatha & Mr. Rama Krishna",
       favouriteImage: "/assets/mouktika-photo.jpg",
-      favourites: [
-        { name: "Coffee", icon: "Coffee" },
-        { name: "Matcha", icon: "Heart" },
-        { name: "Music", icon: "Music" },
-        { name: "Traveling", icon: "Plane" },
-        { name: "Consulting", icon: "Briefcase" },
-        { name: "Shopping", icon: "ShoppingBag" },
-      ],
       quote: '"good coffee, good plans, great outfits & big dreams"'
     },
-    monogram: "P & M",
+    monogram: "M & P",
     hashtag: "#PRUDHVIGOTMOUKTIKA"
   },
   ceremony: {

@@ -9,7 +9,7 @@ An elegant, luxury wedding invitation website for **Prudhvi Sai & Mouktika**.
 - 💑 **The Couple**:
   - **Groom**: Prudhvi Sai (S/o Mrs. Surya Prabha & Mr. Narayana Rao)
   - **Bride**: Mouktika (D/o Mrs. Sujatha & Mr. Rama Krishna)
-  - **Monogram**: P & M
+  - **Monogram**: M & P
   - **Couple Hashtag**: `#PRUDHVIGOTMOUKTIKA`
 
 - 🌴 **Destination Wedding Itinerary (Kerala)**:
@@ -27,7 +27,7 @@ An elegant, luxury wedding invitation website for **Prudhvi Sai & Mouktika**.
   - Original romantic background soundtrack (`/audio/background.mp3`) with auto-play on envelope opening and floating mute/unmute audio control.
 
 - 🪙 **Interactive Features**:
-  - 3D Envelope opening with gold wax seal monogram ("P & M").
+  - 3D Envelope opening with gold wax seal monogram ("M & P").
   - Gold Foil Scratch-to-Reveal card uncovering the Save The Date (**25th November 2026**).
   - Confetti burst celebration on uncovering >45% of the card.
   - Real-time live countdown timer to the sacred Muhurtham (25th November 2026, 9:18 AM IST).

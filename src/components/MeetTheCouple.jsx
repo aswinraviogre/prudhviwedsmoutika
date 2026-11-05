@@ -1,15 +1,5 @@
 import React from 'react';
-import { Coffee, Heart, Music, Plane, Briefcase, ShoppingBag } from 'lucide-react';
 import { invitationData } from '../data/invitationData';
-
-const ICON_MAP = {
-  Coffee: Coffee,
-  Heart: Heart,
-  Music: Music,
-  Plane: Plane,
-  Briefcase: Briefcase,
-  ShoppingBag: ShoppingBag,
-};
 
 export default function MeetTheCouple() {
   const { bride, groom } = invitationData.couple;
@@ -55,21 +45,7 @@ export default function MeetTheCouple() {
               />
               <div className="absolute inset-0 ring-1 ring-inset ring-gold-soft/40 rounded-2xl pointer-events-none" />
             </div>
-            <div className="grid grid-cols-2 gap-4 w-full text-foreground/80 mb-6">
-              {bride.favourites.map((fav) => {
-                const IconComponent = ICON_MAP[fav.icon] || Heart;
-                return (
-                  <div
-                    key={fav.name}
-                    className="flex items-center gap-2.5 bg-cream/30 border border-gold-soft/30 rounded-full px-4 py-2"
-                  >
-                    <IconComponent className="h-4 w-4 text-rose shrink-0" />
-                    <span className="font-serif-display text-base">{fav.name}</span>
-                  </div>
-                );
-              })}
-            </div>
-            <div className="w-full border-t border-gold-soft/40 pt-4 text-center">
+            <div className="w-full border-t border-gold-soft/40 pt-6 text-center mt-auto">
               <p className="font-serif-display italic text-base sm:text-lg text-sage-deep/90 leading-relaxed px-2">
                 {bride.quote}
               </p>

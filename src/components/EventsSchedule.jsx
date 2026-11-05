@@ -37,10 +37,10 @@ export default function EventsSchedule() {
                 } bg-cream`}
               >
                 {/* Background image & dark overlay for highlight events */}
-                {ceremony.bgImage && (
+                {(event.bgImage || ceremony.bgImage) && (
                   <>
                     <img
-                      src={ceremony.bgImage}
+                      src={event.bgImage || ceremony.bgImage}
                       alt=""
                       aria-hidden="true"
                       loading="lazy"
@@ -49,8 +49,8 @@ export default function EventsSchedule() {
                     <div
                       className={`absolute inset-0 ${
                         isMainWedding
-                          ? "bg-black/60 bg-gradient-to-r from-black/80 via-black/60 to-black/80"
-                          : "bg-black/55"
+                          ? "bg-black/65 bg-gradient-to-r from-black/85 via-black/65 to-black/85"
+                          : "bg-black/60 bg-gradient-to-t from-black/80 via-black/55 to-black/75"
                       }`}
                       aria-hidden="true"
                     />

@@ -46,7 +46,8 @@ export const invitationData = {
       venue: "Paradise Resort, Kumarakom, Kerala",
       dressCode: "Green & Festive Floral",
       icon: "🌿",
-      badge: "Destination Celebration · Day 1"
+      badge: "Destination Celebration · Day 1",
+      bgImage: "/assets/bg-mehendi.jpg"
     },
     {
       id: "haldi",
@@ -58,7 +59,8 @@ export const invitationData = {
       venue: "Paradise Resort, Kumarakom, Kerala",
       dressCode: "Traditional Haldi Yellow",
       icon: "🌼",
-      badge: "Destination Celebration · Day 2 Morning"
+      badge: "Destination Celebration · Day 2 Morning",
+      bgImage: "/assets/bg-haldi.jpg"
     },
     {
       id: "sangeeth",
@@ -70,7 +72,8 @@ export const invitationData = {
       venue: "Paradise Resort, Kumarakom, Kerala",
       dressCode: "Glamorous Indo-Western / Evening Sparkle",
       icon: "💃",
-      badge: "Destination Celebration · Day 2 Evening"
+      badge: "Destination Celebration · Day 2 Evening",
+      bgImage: "/assets/bg-sangeet-new-CNNXHaSd.jpg"
     },
     {
       id: "wedding",
@@ -82,7 +85,8 @@ export const invitationData = {
       venue: "Paradise Resort, Kumarakom, Kerala",
       dressCode: "Traditional South Indian / Festive Attire",
       icon: "🪔",
-      badge: "The Sacred Muhurtham · Day 3"
+      badge: "The Sacred Muhurtham · Day 3",
+      bgImage: "/assets/bg-wedding.jpg"
     },
     {
       id: "reception",
@@ -94,7 +98,8 @@ export const invitationData = {
       venue: "BSN Convention - Sabbavaram, Visakhapatnam",
       dressCode: "Formal / Festive Indian",
       icon: "✨",
-      badge: "Grand Reception"
+      badge: "Grand Reception",
+      bgImage: "/assets/bg-reception.jpg"
     }
   ],
   memories: {

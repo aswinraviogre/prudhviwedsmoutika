@@ -103,10 +103,17 @@ export const invitationData = {
     }
   ],
   memories: {
+    weddingLogo: {
+      title: "Our Wedding Logo",
+      subtitle: "TWO HEARTS, ONE PROMISE, A LIFETIME TOGETHER",
+      caption: "Mouktika & Prudhvi Sai",
+      hashtag: "#MouVi",
+      image: "/assets/wedding-logo.jpg"
+    },
     valentine: {
-      title: "Our First Valentine",
-      subtitle: "A MEMORY ACROSS MILES",
-      image: "/assets/letter-BAVdRuxE.png"
+      title: "Our Wedding Logo",
+      subtitle: "TWO HEARTS, ONE PROMISE, A LIFETIME TOGETHER",
+      image: "/assets/wedding-logo.jpg"
     },
     firstPhoto: {
       title: "Our First Photo",

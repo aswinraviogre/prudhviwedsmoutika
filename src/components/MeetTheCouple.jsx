@@ -3,7 +3,7 @@ import { invitationData } from '../data/invitationData';
 
 export default function MeetTheCouple() {
   const { bride, groom } = invitationData.couple;
-  const { valentine, firstPhoto } = invitationData.memories;
+  const { weddingLogo, firstPhoto } = invitationData.memories;
 
   return (
     <section className="relative py-20 px-6 bg-cream overflow-hidden">
@@ -86,24 +86,32 @@ export default function MeetTheCouple() {
           </div>
         </div>
 
-        {/* Memory: Our First Valentine */}
+        {/* Memory: Our Wedding Logo */}
         <div className="mb-24 bg-cream/70 backdrop-blur-sm border border-gold-soft/50 rounded-3xl p-6 sm:p-10 shadow-elegant">
-          <div className="text-center mb-10">
+          <div className="text-center mb-8">
             <h3 className="font-script text-4xl sm:text-5xl text-rose-deep">
-              {valentine.title}
+              {weddingLogo.title}
             </h3>
-            <p className="font-cinzel text-[10px] sm:text-xs text-sage-deep tracking-widest mt-1">
-              {valentine.subtitle}
+            <p className="font-cinzel text-[10px] sm:text-xs text-sage-deep tracking-widest mt-1 uppercase">
+              {weddingLogo.subtitle}
             </p>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <div className="relative rounded-2xl overflow-hidden border border-gold-soft/50 shadow-soft max-w-md w-full group">
+            <div className="relative rounded-3xl overflow-hidden border-2 border-gold-soft/60 shadow-elegant max-w-sm sm:max-w-md w-full group bg-white p-2 sm:p-3">
               <img
-                src={valentine.image}
-                alt="Valentine Bouquet and Note"
-                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+                src={weddingLogo.image}
+                alt="Mouktika & Prudhvi Sai Wedding Logo #MouVi"
+                className="w-full h-auto object-contain rounded-2xl group-hover:scale-105 transition-transform duration-700"
                 loading="lazy"
               />
+            </div>
+            <div className="text-center mt-6">
+              <p className="font-script text-3xl sm:text-4xl text-rose-deep">
+                {weddingLogo.caption}
+              </p>
+              <p className="font-cinzel text-xs text-gold-deep tracking-widest mt-1.5 font-semibold">
+                {weddingLogo.hashtag}
+              </p>
             </div>
           </div>
         </div>

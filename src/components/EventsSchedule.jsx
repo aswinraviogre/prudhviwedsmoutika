@@ -3,7 +3,7 @@ import { invitationData } from '../data/invitationData';
 import { SectionDivider, FloralCornerDecorations } from './FloralDecorations';
 
 export default function EventsSchedule() {
-  const { events, ceremony } = invitationData;
+  const { events } = invitationData;
 
   return (
     <section className="relative py-20 px-6 bg-sage-soft bg-secondary">
@@ -22,9 +22,8 @@ export default function EventsSchedule() {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto space-y-10">
-          {events.map((event, index) => {
-            const isEven = index % 2 === 0;
+        <div className="max-w-4xl mx-auto space-y-8">
+          {events.map((event) => {
             const isMainWedding = event.id === "wedding";
 
             return (
@@ -32,115 +31,94 @@ export default function EventsSchedule() {
                 key={event.id}
                 className={`relative rounded-3xl overflow-hidden shadow-soft hover:shadow-elegant transition-all duration-500 hover:-translate-y-1 group isolate border ${
                   isMainWedding
-                    ? "border-gold ring-2 ring-gold/40 shadow-gold"
-                    : "border-gold-soft/80"
-                } bg-cream`}
+                    ? "border-gold ring-2 ring-gold/40 shadow-gold bg-cream"
+                    : "border-gold-soft/80 bg-cream/90"
+                }`}
               >
-                {/* Background image & dark overlay for highlight events */}
-                {(event.bgImage || ceremony.bgImage) && (
+                {/* Thematic event photo background with luminous cream overlay */}
+                {event.bgImage && (
                   <>
                     <img
-                      src={event.bgImage || ceremony.bgImage}
-                      alt=""
+                      src={event.bgImage}
+                      alt={`${event.title} backdrop`}
                       aria-hidden="true"
                       loading="lazy"
-                      className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90"
                     />
                     <div
-                      className={`absolute inset-0 ${
-                        isMainWedding
-                          ? "bg-black/65 bg-gradient-to-r from-black/85 via-black/65 to-black/85"
-                          : "bg-black/60 bg-gradient-to-t from-black/80 via-black/55 to-black/75"
-                      }`}
+                      className="absolute inset-0 bg-gradient-to-b from-cream/45 via-cream/65 to-cream/85 backdrop-blur-[1px]"
                       aria-hidden="true"
                     />
                   </>
                 )}
 
                 {/* Event content */}
-                <div className="relative p-6 sm:p-10 text-white">
-                  {/* Badge */}
+                <div className="relative p-6 sm:p-10 text-foreground">
+                  {/* Badge & Icon Header */}
                   <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
-                    <span className="font-cinzel text-[11px] tracking-widest px-3 py-1 rounded-full bg-gold/30 text-gold-soft border border-gold/40">
+                    <span className="font-cinzel text-[11px] tracking-widest px-3.5 py-1.5 rounded-full bg-cream/90 backdrop-blur-md text-gold-deep border border-gold/50 font-semibold shadow-xs">
                       {event.badge}
                     </span>
-                    <span className="text-2xl">{event.icon}</span>
+                    <span className="text-2xl filter drop-shadow-xs" aria-hidden="true">
+                      {event.icon}
+                    </span>
                   </div>
 
-                  <div className="grid gap-6 items-center grid-cols-1 sm:grid-cols-12">
-                    {/* Illustration (only on main wedding or large events) */}
-                    <div
-                      className={`sm:col-span-4 flex justify-center items-center ${
-                        isEven ? "sm:order-1" : "sm:order-2"
-                      }`}
-                    >
-                      <img
-                        src={ceremony.coupleIllustration}
-                        alt={`${event.title} illustration`}
-                        loading="lazy"
-                        className="w-full max-w-[180px] sm:max-w-[200px] h-auto object-contain drop-shadow-lg group-hover:scale-105 transition-transform duration-500"
-                      />
+                  {/* Title & Description */}
+                  <div className="text-center sm:text-left mb-6">
+                    <h3 className="font-script text-4xl sm:text-5xl text-rose-deep font-normal leading-tight drop-shadow-xs">
+                      {event.title}
+                    </h3>
+                    <p className="mt-2 italic text-sm sm:text-base text-sage-deep font-medium">
+                      {event.description}
+                    </p>
+
+                    <div className="my-4 flex items-center gap-3 justify-center sm:justify-start">
+                      <span className="h-px w-12 bg-gold-soft" />
+                      <span className="text-gold">❀</span>
+                      <span className="h-px w-12 bg-gold-soft" />
+                    </div>
+                  </div>
+
+                  {/* 4 Details Grid */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {/* Date & Day */}
+                    <div className="bg-white/90 backdrop-blur-md rounded-2xl p-4 border border-gold-soft/60 shadow-xs hover:border-gold-soft transition-colors">
+                      <div className="font-cinzel text-xs text-sage-deep font-semibold tracking-wider uppercase">
+                        DATE & DAY
+                      </div>
+                      <div className="font-serif-display text-lg text-foreground font-semibold mt-1">
+                        {event.day} · {event.dateFormatted}
+                      </div>
                     </div>
 
-                    {/* Details */}
-                    <div
-                      className={`sm:col-span-8 flex flex-col justify-center text-center sm:text-left ${
-                        isEven ? "sm:order-2" : "sm:order-1"
-                      }`}
-                    >
-                      <h3 className="font-script text-4xl sm:text-5xl text-cream font-normal leading-tight text-slate-50">
-                        {event.title}
-                      </h3>
-                      <p className="mt-2 italic text-sm sm:text-base text-cream/90 text-slate-200">
-                        {event.description}
-                      </p>
-
-                      <div className="my-4 flex items-center gap-3 justify-center sm:justify-start">
-                        <span className="h-px w-10 bg-gold-soft/60" />
-                        <span className="text-gold">❀</span>
-                        <span className="h-px w-10 bg-gold-soft/60" />
+                    {/* Time */}
+                    <div className="bg-white/90 backdrop-blur-md rounded-2xl p-4 border border-gold-soft/60 shadow-xs hover:border-gold-soft transition-colors">
+                      <div className="font-cinzel text-xs text-sage-deep font-semibold tracking-wider uppercase">
+                        TIME
                       </div>
+                      <div className="font-serif-display text-lg text-foreground font-semibold mt-1">
+                        {event.time}
+                      </div>
+                    </div>
 
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-1">
-                        {/* Date & Day */}
-                        <div className="bg-black/25 backdrop-blur-sm rounded-xl p-3 border border-white/10">
-                          <div className="font-cinzel text-xs text-gold-soft">
-                            DATE & DAY
-                          </div>
-                          <div className="font-serif-display text-lg text-cream font-semibold mt-0.5">
-                            {event.day} · {event.dateFormatted}
-                          </div>
-                        </div>
+                    {/* Venue */}
+                    <div className="bg-white/90 backdrop-blur-md rounded-2xl p-4 border border-gold-soft/60 shadow-xs hover:border-gold-soft transition-colors">
+                      <div className="font-cinzel text-xs text-sage-deep font-semibold tracking-wider uppercase">
+                        VENUE
+                      </div>
+                      <div className="font-serif-display text-base text-foreground font-semibold mt-1">
+                        {event.venue}
+                      </div>
+                    </div>
 
-                        {/* Time */}
-                        <div className="bg-black/25 backdrop-blur-sm rounded-xl p-3 border border-white/10">
-                          <div className="font-cinzel text-xs text-gold-soft">
-                            TIME
-                          </div>
-                          <div className="font-serif-display text-lg text-cream font-semibold mt-0.5">
-                            {event.time}
-                          </div>
-                        </div>
-
-                        {/* Venue */}
-                        <div className="bg-black/25 backdrop-blur-sm rounded-xl p-3 border border-white/10">
-                          <div className="font-cinzel text-xs text-gold-soft">
-                            VENUE
-                          </div>
-                          <div className="font-serif-display text-base text-cream font-semibold mt-0.5">
-                            {event.venue}
-                          </div>
-                        </div>
-
-                        {/* Dress Code */}
-                        <div className="bg-black/25 backdrop-blur-sm rounded-xl p-3 border border-white/10">
-                          <div className="font-cinzel text-xs text-gold-soft">
-                            ATTIRE / DRESS CODE
-                          </div>
-                          <div className="font-serif-display text-base text-cream font-semibold mt-0.5">
-                            {event.dressCode}
-                          </div>
-                        </div>
+                    {/* Attire / Dress Code */}
+                    <div className="bg-white/90 backdrop-blur-md rounded-2xl p-4 border border-gold-soft/60 shadow-xs hover:border-gold-soft transition-colors">
+                      <div className="font-cinzel text-xs text-sage-deep font-semibold tracking-wider uppercase">
+                        ATTIRE / DRESS CODE
+                      </div>
+                      <div className="font-serif-display text-base text-foreground font-semibold mt-1">
+                        {event.dressCode}
                       </div>
                     </div>
                   </div>

@@ -32,20 +32,16 @@ export default function MeetTheCouple() {
         {/* Couple Favourites Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 mb-24">
           {/* Bride's Favourite */}
-          <div className="flex flex-col items-center bg-cream/60 backdrop-blur-sm border border-gold-soft/60 rounded-3xl p-6 sm:p-8 shadow-soft hover:shadow-elegant transition-all duration-500">
-            <h3 className="font-script text-4xl text-rose-deep mb-6">
-              {bride.name}'s Favourite
-            </h3>
-            <div className="relative w-full rounded-2xl overflow-hidden border-2 border-gold-soft shadow-soft mb-6 bg-white aspect-[3/4] group/photo">
+          <div className="flex flex-col items-center bg-cream/60 backdrop-blur-sm border border-gold-soft/60 rounded-3xl p-4 sm:p-6 shadow-soft hover:shadow-elegant transition-all duration-500">
+            <div className="relative w-full rounded-2xl overflow-hidden border-2 border-gold-soft/60 shadow-soft mb-6 bg-white group/photo">
               <img
                 src={bride.favouriteImage}
-                alt={`${bride.name}'s portrait`}
-                className="w-full h-full object-cover object-top group-hover/photo:scale-105 transition-transform duration-700"
+                alt={`${bride.name}'s Favourite`}
+                className="w-full h-auto object-contain rounded-2xl group-hover/photo:scale-[1.02] transition-transform duration-500"
                 loading="lazy"
               />
-              <div className="absolute inset-0 ring-1 ring-inset ring-gold-soft/40 rounded-2xl pointer-events-none" />
             </div>
-            <div className="w-full border-t border-gold-soft/40 pt-6 text-center mt-auto">
+            <div className="w-full border-t border-gold-soft/40 pt-4 text-center mt-auto">
               <p className="font-serif-display italic text-base sm:text-lg text-sage-deep/90 leading-relaxed px-2">
                 {bride.quote}
               </p>
@@ -53,32 +49,16 @@ export default function MeetTheCouple() {
           </div>
 
           {/* Groom's Favourite */}
-          <div className="flex flex-col items-center bg-cream/60 backdrop-blur-sm border border-gold-soft/60 rounded-3xl p-6 sm:p-8 shadow-soft hover:shadow-elegant transition-all duration-500">
-            <h3 className="font-script text-4xl text-rose-deep mb-6">
-              {groom.name}'s Favourite
-            </h3>
-            <div className="relative w-full rounded-2xl overflow-hidden border-2 border-gold-soft shadow-soft mb-6 bg-white aspect-[3/4] group/photo">
+          <div className="flex flex-col items-center bg-cream/60 backdrop-blur-sm border border-gold-soft/60 rounded-3xl p-4 sm:p-6 shadow-soft hover:shadow-elegant transition-all duration-500">
+            <div className="relative w-full rounded-2xl overflow-hidden border-2 border-gold-soft/60 shadow-soft mb-6 bg-white group/photo">
               <img
                 src={groom.favouriteImage}
-                alt={`${groom.name}'s portrait`}
-                className="w-full h-full object-cover object-top group-hover/photo:scale-105 transition-transform duration-700"
+                alt={`${groom.name}'s Favourite`}
+                className="w-full h-auto object-contain rounded-2xl group-hover/photo:scale-[1.02] transition-transform duration-500"
                 loading="lazy"
               />
-              <div className="absolute inset-0 ring-1 ring-inset ring-gold-soft/40 rounded-2xl pointer-events-none" />
             </div>
-            <div className="flex flex-col items-center justify-center bg-[#fdf2f8] border border-gold-soft/40 rounded-2xl p-6 w-full shadow-soft text-center mb-6 min-h-[128px]">
-              <div className="font-cinzel text-[10px] text-rose/70 tracking-[0.2em] mb-1">
-                ULTIMATE FAVOURITE
-              </div>
-              <h4 className="font-script text-4xl sm:text-5xl text-rose-deep tracking-wider flex items-center gap-2 justify-center">
-                {groom.ultimateFavourite}{" "}
-                <span className="text-rose animate-pulse">♥</span>
-              </h4>
-              <p className="font-serif-display italic text-rose-deep/70 text-sm mt-2">
-                That's it. That's the favourite!
-              </p>
-            </div>
-            <div className="w-full border-t border-gold-soft/40 pt-6 text-center mt-auto">
+            <div className="w-full border-t border-gold-soft/40 pt-4 text-center mt-auto">
               <p className="font-serif-display italic text-base sm:text-lg text-sage-deep/90 leading-relaxed px-2">
                 {groom.quote}
               </p>

@@ -115,10 +115,27 @@ export const invitationData = {
       subtitle: "TWO HEARTS, ONE PROMISE, A LIFETIME TOGETHER",
       image: "/assets/wedding-logo.jpg"
     },
+    decadeOfUs: {
+      title: "A Decade of Us",
+      subtitle: "10 YEARS OF LOVE, LAUGHTER & TOGETHERNESS · 2016 – 2026",
+      tagline: "Ten years of cherished memories, countless smiles, and a lifetime more to go",
+      photos: [
+        { id: 1, year: "2016", title: "Where Our Story Began", caption: "Day 1 of Our Journey", image: "/assets/decade-1.jpg" },
+        { id: 2, year: "2017", title: "Lost in Your Eyes", caption: "The Look of Love", image: "/assets/decade-2.jpg" },
+        { id: 3, year: "2018", title: "Her Radiant Smile", caption: "Pure Happiness", image: "/assets/decade-3.jpg" },
+        { id: 4, year: "2019", title: "Traditional Elegance", caption: "Blessings & Smiles", image: "/assets/decade-4.jpg" },
+        { id: 5, year: "2020", title: "Grace & Joy", caption: "Together Through All Seasons", image: "/assets/decade-5.jpg" },
+        { id: 6, year: "2021", title: "Dreams & Ambition", caption: "Cheering Each Other On", image: "/assets/decade-6.jpg" },
+        { id: 7, year: "2022", title: "Side by Side", caption: "Every Milestone Together", image: "/assets/decade-7.jpg" },
+        { id: 8, year: "2023", title: "Love Across the Miles", caption: "Unbreakable Connection", image: "/assets/decade-8.jpg" },
+        { id: 9, year: "2024", title: "Two Hearts, One Promise", caption: "Our Sacred Bond #MouVi", image: "/assets/decade-9.jpg" },
+        { id: 10, year: "2026", title: "A Lifetime Together", caption: "Forever & Always", image: "/assets/decade-10.jpg" }
+      ]
+    },
     firstPhoto: {
-      title: "Our First Photo",
-      subtitle: "WHERE TIME STOOD STILL",
-      caption: "Our First Photo Together",
+      title: "A Decade of Us",
+      subtitle: "10 YEARS OF LOVE · 2016 – 2026",
+      caption: "Our Journey Together",
       tag: "TOGETHER FOREVER",
       image: "/assets/couple-first-photo.jpg"
     }

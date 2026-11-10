@@ -1,9 +1,10 @@
 import React from 'react';
 import { invitationData } from '../data/invitationData';
+import DecadeOfUs from './DecadeOfUs';
 
 export default function MeetTheCouple() {
   const { bride, groom } = invitationData.couple;
-  const { weddingLogo, firstPhoto } = invitationData.memories;
+  const { weddingLogo } = invitationData.memories;
 
   return (
     <section className="relative py-20 px-6 bg-cream overflow-hidden">
@@ -96,36 +97,8 @@ export default function MeetTheCouple() {
           </div>
         </div>
 
-        {/* Memory: Our First Photo Polaroid */}
-        <div className="flex flex-col items-center">
-          <div className="text-center mb-8">
-            <h3 className="font-script text-4xl sm:text-5xl text-rose-deep">
-              {firstPhoto.title}
-            </h3>
-            <p className="font-cinzel text-[10px] sm:text-xs text-sage-deep tracking-widest mt-1">
-              {firstPhoto.subtitle}
-            </p>
-          </div>
-          <div className="bg-[#fafafa] border border-gold-soft p-4 sm:p-5 pb-8 sm:pb-10 rounded-sm shadow-elegant max-w-sm w-full -rotate-1 hover:rotate-0 hover:scale-[1.02] transition-all duration-500 relative group border-b-[8px] border-b-gold-soft/30">
-            <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/10 pointer-events-none" />
-            <div className="aspect-[9/16] overflow-hidden bg-zinc-100 rounded-sm border border-zinc-200 shadow-inner mb-4 sm:mb-5">
-              <img
-                src={firstPhoto.image}
-                alt="Our first photo together"
-                className="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-500"
-                loading="lazy"
-              />
-            </div>
-            <div className="text-center pt-2">
-              <p className="font-script text-3xl sm:text-4xl text-rose-deep leading-none select-none">
-                {firstPhoto.caption}
-              </p>
-              <p className="font-cinzel text-[9px] tracking-widest text-sage-deep mt-2 select-none">
-                {firstPhoto.tag}
-              </p>
-            </div>
-          </div>
-        </div>
+        {/* A Decade of Us - 10 Couple Photos Showcase */}
+        <DecadeOfUs />
       </div>
     </section>
   );

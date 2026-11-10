@@ -39,7 +39,7 @@ export default function App() {
       {/* Floating fluttering butterfly once invitation is opened */}
       {opened && <ButterflyOverlay />}
 
-      {/* Background music player - DO NOT CHANGE SONG */}
+      {/* Background music player */}
       <AudioPlayer play={opening || opened} src={invitationData.assets.audio} />
 
       {!opened ? (

@@ -69,7 +69,7 @@ export default function EventsSchedule() {
                     <h3 className="font-script text-4xl sm:text-5xl text-rose-deep font-normal leading-tight drop-shadow-xs">
                       {event.title}
                     </h3>
-                    <p className="mt-2 italic text-sm sm:text-base text-[#1b3b22] font-semibold">
+                    <p className="mt-2 italic text-sm sm:text-base text-sage-deep font-semibold">
                       {event.description}
                     </p>
 

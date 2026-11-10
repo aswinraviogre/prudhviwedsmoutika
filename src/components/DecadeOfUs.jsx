@@ -79,13 +79,6 @@ export default function DecadeOfUs() {
               {/* Subtle Polaroid shine */}
               <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/15 pointer-events-none" />
 
-              {/* Year Pin at top */}
-              <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 z-10">
-                <span className="font-cinzel text-[11px] tracking-widest px-3 py-1 rounded-full bg-gold/90 text-white font-semibold shadow-soft border border-white/40">
-                  {currentPhoto.year}
-                </span>
-              </div>
-
               {/* Photo Container */}
               <div
                 className="aspect-[3/4] overflow-hidden bg-zinc-100 rounded-sm border border-zinc-200 shadow-inner mb-4 sm:mb-5 cursor-pointer relative group/img"
@@ -151,13 +144,10 @@ export default function DecadeOfUs() {
               >
                 <img
                   src={p.image}
-                  alt={`Thumbnail ${p.year}`}
-                  className="w-full h-full object-cover object-top"
+                  alt={p.title || `Thumbnail ${idx + 1}`}
+                  className="w-full h-full object-cover object-center"
                   loading="lazy"
                 />
-                <span className="absolute bottom-0 inset-x-0 bg-black/60 text-white text-[9px] font-cinzel text-center py-0.5">
-                  {p.year}
-                </span>
               </button>
             ))}
           </div>
@@ -189,9 +179,6 @@ export default function DecadeOfUs() {
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
-                  <span className="absolute top-2 right-2 bg-gold/90 text-white font-cinzel text-[9px] px-2 py-0.5 rounded-full font-semibold shadow-xs">
-                    {photo.year}
-                  </span>
                 </div>
 
                 {/* Caption */}
@@ -236,10 +223,7 @@ export default function DecadeOfUs() {
             </div>
 
             <div className="text-center">
-              <span className="font-cinzel text-xs px-3 py-1 rounded-full bg-gold/20 text-gold-deep border border-gold/40 font-semibold">
-                {lightboxPhoto.year}
-              </span>
-              <h4 className="font-script text-3xl sm:text-4xl text-rose-deep mt-2">
+              <h4 className="font-script text-3xl sm:text-4xl text-rose-deep mt-1">
                 {lightboxPhoto.title}
               </h4>
               <p className="font-cinzel text-xs text-sage-deep mt-1 uppercase tracking-wider">

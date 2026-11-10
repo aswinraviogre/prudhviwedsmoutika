@@ -117,7 +117,7 @@ export const invitationData = {
     },
     decadeOfUs: {
       title: "A Decade of Us",
-      subtitle: "10 YEARS OF LOVE, LAUGHTER & TOGETHERNESS · 2016 – 2026",
+      subtitle: "10 YEARS OF LOVE, LAUGHTER & TOGETHERNESS",
       tagline: "Ten years of cherished memories, countless smiles, and a lifetime more to go",
       photos: [
         { id: 1, year: "2016", title: "Where Our Story Began", caption: "At the threshold of forever", image: "/assets/decade-1.jpg" },

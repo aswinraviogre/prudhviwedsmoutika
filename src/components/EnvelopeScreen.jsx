@@ -47,7 +47,7 @@ export default function EnvelopeScreen({ onOpen, opening }) {
         {/* Wax Seal with Gold Shimmer */}
         <span className="absolute inset-0 flex items-center justify-center">
           <span className="w-20 h-20 sm:w-24 sm:h-24 rounded-full gradient-gold shadow-gold animate-shimmer flex items-center justify-center">
-            <span className="font-cinzel text-xs text-white/90">
+            <span className="font-cinzel text-xs sm:text-sm text-white/95 font-semibold tracking-wider">
               {invitationData.couple.monogram}
             </span>
           </span>

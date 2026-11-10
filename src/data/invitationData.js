@@ -17,7 +17,7 @@ export const invitationData = {
       favouriteImage: "/assets/mouktika-photo.jpg",
       quote: '"good coffee, good plans, great outfits & big dreams"'
     },
-    monogram: "M & P",
+    monogram: "MouVi",
     hashtag: "#PRUDHVIGOTMOUKTIKA"
   },
   ceremony: {

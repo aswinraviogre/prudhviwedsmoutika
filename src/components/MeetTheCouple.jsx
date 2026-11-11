@@ -7,7 +7,7 @@ export default function MeetTheCouple() {
   const { weddingLogo } = invitationData.memories;
 
   return (
-    <section className="relative py-20 px-6 bg-cream overflow-hidden">
+    <section className="relative py-16 sm:py-20 px-3 sm:px-6 bg-cream overflow-hidden">
       {/* Decorative corner florals */}
       <span className="pointer-events-none absolute top-12 left-4 text-4xl opacity-15">🌸</span>
       <span className="pointer-events-none absolute top-40 right-10 text-3xl opacity-15">🌿</span>
@@ -38,7 +38,7 @@ export default function MeetTheCouple() {
               <img
                 src={bride.favouriteImage}
                 alt={`${bride.name}'s Favourite`}
-                className="w-full h-auto object-contain rounded-2xl group-hover/photo:scale-[1.02] transition-transform duration-500"
+                className="w-full h-auto object-contain rounded-2xl transition-all duration-500 group-hover/photo:brightness-[0.98]"
                 loading="lazy"
               />
             </div>
@@ -55,7 +55,7 @@ export default function MeetTheCouple() {
               <img
                 src={groom.favouriteImage}
                 alt={`${groom.name}'s Favourite`}
-                className="w-full h-auto object-contain rounded-2xl group-hover/photo:scale-[1.02] transition-transform duration-500"
+                className="w-full h-auto object-contain rounded-2xl transition-all duration-500 group-hover/photo:brightness-[0.98]"
                 loading="lazy"
               />
             </div>
@@ -82,7 +82,7 @@ export default function MeetTheCouple() {
               <img
                 src={weddingLogo.image}
                 alt="Mouktika & Prudhvi Sai Wedding Logo #MouVi"
-                className="w-full h-auto object-contain rounded-2xl group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-auto object-contain rounded-2xl transition-all duration-500 group-hover:brightness-[0.98]"
                 loading="lazy"
               />
             </div>

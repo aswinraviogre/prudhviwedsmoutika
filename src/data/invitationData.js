@@ -120,16 +120,16 @@ export const invitationData = {
       subtitle: "10 YEARS OF LOVE, LAUGHTER & TOGETHERNESS",
       tagline: "Ten years of cherished memories, countless smiles, and a lifetime more to go",
       photos: [
-        { id: 1, year: "2016", title: "Where Our Story Began", caption: "At the threshold of forever", image: "/assets/decade-1.jpg" },
-        { id: 2, year: "2017", title: "Smiles & Sunshine", caption: "Walking side by side through life", image: "/assets/decade-2.jpg" },
-        { id: 3, year: "2018", title: "Lost in Your Eyes", caption: "Finding our world in each other", image: "/assets/decade-3.jpg" },
-        { id: 4, year: "2019", title: "Cherished Moments", caption: "Laughter, warmth & tender hearts", image: "/assets/decade-4.jpg" },
-        { id: 5, year: "2020", title: "Auspicious Blessings", caption: "Prudhvi's heart full of joy", image: "/assets/decade-5.jpg" },
-        { id: 6, year: "2021", title: "Divine Radiance", caption: "Mouktika adorned in jasmine & grace", image: "/assets/decade-6.jpg" },
-        { id: 7, year: "2022", title: "Traditional Grace", caption: "Welcoming our sacred beginnings", image: "/assets/decade-7.jpg" },
-        { id: 8, year: "2023", title: "Heritage & Splendor", caption: "Festive elegance & timeless charm", image: "/assets/decade-8.jpg" },
-        { id: 9, year: "2024", title: "Laughter & Sunshine", caption: "Dancing into our new tomorrow", image: "/assets/decade-9.jpg" },
-        { id: 10, year: "2026", title: "A Lifetime Together", caption: "Forever & Always #MouVi", image: "/assets/decade-10.jpg" }
+        { id: 1, title: "Where It All Began", caption: "Late night walks & endless conversations", image: "/assets/decade-1.jpg" },
+        { id: 2, title: "Foodie Dates & Fun", caption: "Finding joy in the simple, everyday moments", image: "/assets/decade-2.jpg" },
+        { id: 3, title: "Shopping Shenanigans", caption: "Our signature mirror selfies wherever we go", image: "/assets/decade-3.jpg" },
+        { id: 4, title: "Travel Diaries", caption: "Exploring new places with my favourite person", image: "/assets/decade-4.jpg" },
+        { id: 5, title: "Mountain Getaways", caption: "Chasing sunsets and peaceful horizons", image: "/assets/decade-5.jpg" },
+        { id: 6, title: "My Safe Haven", caption: "The warmest comfort in each other's embrace", image: "/assets/decade-6.jpg" },
+        { id: 7, title: "Leaning on You", caption: "Always my partner in crime and biggest cheerleader", image: "/assets/decade-7.jpg" },
+        { id: 8, title: "Twinning in Blue", caption: "Dressed in royal blue, celebrating our bond", image: "/assets/decade-8.jpg" },
+        { id: 9, title: "Festive Traditions", caption: "Cherishing culture, family, and timeless rituals", image: "/assets/decade-9.jpg" },
+        { id: 10, title: "A Shower of Blessings", caption: "Here's to a lifetime of love & laughter #MouVi", image: "/assets/decade-10.jpg" }
       ]
     },
     firstPhoto: {
